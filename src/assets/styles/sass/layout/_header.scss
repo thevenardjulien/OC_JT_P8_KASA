@@ -1,0 +1,16 @@
+@use "../utils/index" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  &__logo {
+    height: 45px;
+    width: 145px;
+  }
+  &__link {
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+}
