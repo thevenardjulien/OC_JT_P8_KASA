@@ -1,0 +1,6 @@
+@use "../utils/mixins" as *;
+
+.container-p404 {
+  padding: 50px;
+  @include flex-center;
+}

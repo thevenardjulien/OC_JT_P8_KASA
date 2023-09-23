@@ -139,6 +139,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.container-p404 {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -152,6 +159,23 @@ body {
 .navbar__link {
   color: #ff6060;
   text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #000;
+  padding-block: 80px;
+}
+.footer__logo {
+  height: 40px;
+  width: 125px;
+}
+.footer__copyright {
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
