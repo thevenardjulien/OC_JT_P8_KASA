@@ -5,6 +5,7 @@ import App from "./App";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import P404 from "./pages/P404";
+import Apropos from "./pages/Apropos";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/a-propos" element={<Apropos />} />
         <Route path="*" element={<P404 />} />
       </Routes>
       <Footer />

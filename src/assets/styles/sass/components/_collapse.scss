@@ -1,0 +1,17 @@
+@use "../utils/variables" as *;
+
+.collapse {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    color: #fff;
+  }
+  &__chevron {
+    color: white;
+    font-size: 1.2rem;
+  }
+}
