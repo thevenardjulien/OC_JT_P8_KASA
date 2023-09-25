@@ -7,8 +7,6 @@ function App() {
     <div>
       <Banner />
       <Card />
-      <Card />
-      <Card />
     </div>
   );
 }

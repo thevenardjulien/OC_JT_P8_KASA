@@ -1,12 +1,14 @@
-import thumb from "../assets/img/Thumb.png";
+import logements from "../assets/json/logements.json";
 
 const Card = () => {
-  return (
-    <div className="card">
-      <img className="card__img" src={thumb} alt="card img" />
-      <p className="card__title">Titre de la location</p>
-    </div>
-  );
+  return logements.map((logement, index) => {
+    return (
+      <div className="card" key={index}>
+        <img className="card__img" src={logement.cover} alt={logement.title} />
+        <p className="card__title">{logement.title}</p>
+      </div>
+    );
+  });
 };
 
 export default Card;
