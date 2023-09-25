@@ -144,6 +144,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 140px;
+  color: #ff6060;
+}
+.container-p404__title {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.container-p404__text {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.container-p404__link {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .navbar {
