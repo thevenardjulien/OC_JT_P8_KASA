@@ -1,8 +1,12 @@
 @use "../utils/variables" as *;
 
+.collapse-container {
+  margin-block: 20px;
+}
+
 .collapse {
-  margin: 20px;
-  padding: 15px;
+  margin: 20px 20px 2px 20px;
+  padding: 10px 15px;
   border-radius: 5px;
   background-color: $primary-color;
   display: flex;
@@ -13,5 +17,24 @@
   &__chevron {
     color: white;
     font-size: 1.2rem;
+    transition: transform 100ms ease-out;
+    &--active {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.collapseContent {
+  margin: 0px 20px 20px 20px;
+  padding: 15px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  color: $primary-color;
+  opacity: 0;
+  transform: translateY(-50px);
+  &--active {
+    transition: all 100ms;
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

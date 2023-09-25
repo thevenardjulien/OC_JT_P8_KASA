@@ -234,9 +234,13 @@ body {
   font-weight: 500;
 }
 
+.collapse-container {
+  margin-block: 20px;
+}
+
 .collapse {
-  margin: 20px;
-  padding: 15px;
+  margin: 20px 20px 2px 20px;
+  padding: 10px 15px;
   border-radius: 5px;
   background-color: #ff6060;
   display: flex;
@@ -248,6 +252,25 @@ body {
 .collapse__chevron {
   color: white;
   font-size: 1.2rem;
+  transition: transform 100ms ease-out;
+}
+.collapse__chevron--active {
+  transform: rotate(-180deg);
+}
+
+.collapseContent {
+  margin: 0px 20px 20px 20px;
+  padding: 15px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  color: #ff6060;
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.collapseContent--active {
+  transition: all 100ms;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /*# sourceMappingURL=main.css.map */
