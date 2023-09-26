@@ -162,6 +162,19 @@ body {
   text-decoration: underline;
 }
 
+.carousel-container {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding: 20px;
+  color: #ff6060;
+}
+.carousel-container__title {
+  margin-top: 15px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -271,6 +284,34 @@ body {
   transition: all 100ms;
   opacity: 1;
   transform: translateY(0px);
+}
+
+.carousel {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+.carousel__img {
+  height: 255px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.chevrons {
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  color: #fff;
+  text-shadow: 4px 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+.chevrons__left {
+  left: 15px;
+}
+.chevrons__right {
+  right: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

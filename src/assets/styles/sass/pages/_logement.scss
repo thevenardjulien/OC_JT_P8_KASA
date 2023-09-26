@@ -1,0 +1,14 @@
+@use "../utils/index" as *;
+
+.carousel-container {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding: 20px;
+  color: $primary-color;
+  &__title {
+    margin-top: 15px;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}
