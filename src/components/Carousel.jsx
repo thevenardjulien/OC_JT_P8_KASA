@@ -22,8 +22,6 @@ const Carousel = ({ currentLogement }) => {
     }
   }
 
-  console.log(currentLogement);
-
   return (
     <div className="carousel">
       <img
