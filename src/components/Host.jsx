@@ -1,5 +1,4 @@
 const Host = ({ host }) => {
-  console.log(host);
   return (
     <div className="host">
       <p>{host.name}</p>

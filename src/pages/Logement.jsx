@@ -18,7 +18,6 @@ const Logement = () => {
     if (logement) {
       setCurrentLogement(logement);
     }
-    console.log(currentLogement);
   }, []);
 
   const tags = currentLogement.tags;
@@ -26,6 +25,9 @@ const Logement = () => {
     <li className="tagsList__tag" key={tag}>
       {tag}
     </li>
+  ));
+  const equipments = currentLogement.equipments.map((equipment) => (
+    <li key={equipment}>{equipment}</li>
   ));
 
   return (
@@ -40,12 +42,10 @@ const Logement = () => {
             <Rate rating={currentLogement.rating} />
             <Host host={currentLogement.host} />
           </div>
-          <div>
-            <Collapse />
-            <Collapse />
-          </div>
         </div>
       ) : null}
+      <Collapse title="Description" txt={currentLogement.description} />
+      <Collapse title="Équipements" txt={equipments} />
     </div>
   );
 };
