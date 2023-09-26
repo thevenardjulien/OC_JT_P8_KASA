@@ -26,3 +26,9 @@
     text-overflow: ellipsis;
   }
 }
+
+.rating-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__img {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+  }
+}

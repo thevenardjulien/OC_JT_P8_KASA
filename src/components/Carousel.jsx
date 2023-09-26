@@ -1,8 +1,6 @@
 import { useState } from "react";
 
 const Carousel = ({ currentLogement }) => {
-  // console.log(currentLogement);
-
   const [current, setCurrent] = useState(0);
   const pictures = currentLogement.pictures;
   const currentPicture = pictures[current];

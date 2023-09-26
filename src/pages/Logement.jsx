@@ -2,7 +2,9 @@ import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import logements from "../assets/json/logements.json";
 import Carousel from "../components/Carousel";
+import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
+import Host from "../components/Host";
 
 const Logement = () => {
   const params = useParams();
@@ -34,7 +36,14 @@ const Logement = () => {
           <h2 className="carousel-container__title">{currentLogement.title}</h2>
           <p>{currentLogement.location}</p>
           <ul className="tagsList">{tagsList}</ul>
-          <Rate rating={currentLogement.rating} />
+          <div className="rating-host">
+            <Rate rating={currentLogement.rating} />
+            <Host host={currentLogement.host} />
+          </div>
+          <div>
+            <Collapse />
+            <Collapse />
+          </div>
         </div>
       ) : null}
     </div>

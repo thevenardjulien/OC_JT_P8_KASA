@@ -189,6 +189,12 @@ body {
   text-overflow: ellipsis;
 }
 
+.rating-host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -326,6 +332,17 @@ body {
 }
 .chevrons__right {
   right: 15px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.host__img {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
