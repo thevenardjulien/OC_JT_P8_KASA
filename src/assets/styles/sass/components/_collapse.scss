@@ -1,11 +1,13 @@
 @use "../utils/variables" as *;
 
 .collapse-container {
-  margin-block: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .collapse {
-  margin: 20px 20px 2px 20px;
+  box-sizing: border-box;
+  width: 100%;
   padding: 10px 15px;
   border-radius: 5px;
   background-color: $primary-color;
@@ -24,10 +26,41 @@
   }
 }
 
+.logement-collapse {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apropos-collapse {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-inline: 20px;
+  margin-bottom: 20px;
+}
+
 .collapseContent {
-  margin: 0px 20px 20px 20px;
+  margin: 0px 20px 0px 20px;
   padding: 15px;
   padding-bottom: 0px;
   border-radius: 5px;
   color: $primary-color;
+}
+
+@media screen and (min-width: 1024px) {
+  .logement-collapse {
+    margin: 20px 0 50px 0;
+    flex-direction: row;
+    width: 100%;
+    gap: 75px;
+  }
+  .logement-collapse .collapse-container {
+    width: 50%;
+  }
+  .apropos-collapse {
+    margin-inline: 100px;
+    margin-bottom: 50px;
+  }
 }

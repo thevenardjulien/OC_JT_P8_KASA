@@ -4,7 +4,7 @@
   display: flex;
   gap: 15px;
   flex-direction: column;
-  padding: 20px;
+  margin-inline: 20px;
   color: $primary-color;
   &__title {
     margin-top: 15px;
@@ -31,4 +31,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .logement-container {
+    margin: 20px 100px;
+  }
+  .carousel-container {
+    margin: 0;
+  }
 }

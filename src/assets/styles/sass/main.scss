@@ -3,3 +3,13 @@
 @use "./pages/index" as *;
 @use "./layout/index" as *;
 @use "./components/index" as *;
+
+@media screen and (min-width: 1024px) {
+  .global-container {
+    padding: 50px 100px;
+  }
+}
+
+.main {
+  padding: 20px;
+}

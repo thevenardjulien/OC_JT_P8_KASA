@@ -11,6 +11,17 @@
     width: 125px;
   }
   &__copyright {
+    text-align: center;
     color: #fff;
+    text-wrap: balance;
+    width: 130px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    &__copyright {
+      width: 100%;
+    }
   }
 }

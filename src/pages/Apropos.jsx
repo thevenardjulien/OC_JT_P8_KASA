@@ -15,7 +15,7 @@ const Apropos = () => {
   return (
     <div>
       <Banner src={BannerImg} />
-      {aboutCollapses}
+      <div className="apropos-collapse">{aboutCollapses}</div>
     </div>
   );
 };

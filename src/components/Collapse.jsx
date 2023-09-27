@@ -28,7 +28,6 @@ const Collapse = ({ title, txt }) => {
               : "collapseContent"
           }
         >
-          {" "}
           {txt}
         </div>
       )}

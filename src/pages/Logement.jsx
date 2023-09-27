@@ -31,7 +31,7 @@ const Logement = () => {
   ));
 
   return (
-    <div>
+    <div className="logement-container">
       {currentLogement !== null ? (
         <div className="carousel-container">
           <Carousel currentLogement={currentLogement} />
@@ -44,8 +44,10 @@ const Logement = () => {
           </div>
         </div>
       ) : null}
-      <Collapse title="Description" txt={currentLogement.description} />
-      <Collapse title="Équipements" txt={equipments} />
+      <div className="logement-collapse">
+        <Collapse title="Description" txt={currentLogement.description} />
+        <Collapse title="Équipements" txt={equipments} />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .banner {
-  margin: 20px;
   position: relative;
+  margin: 20px;
   &__img {
     object-fit: cover;
     height: 110px;
@@ -17,5 +17,20 @@
     color: #fff;
     text-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
     text-wrap: balance;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    margin: 50px 100px;
+    &__img {
+      height: 220px;
+    }
+    &__text {
+      text-wrap: nowrap;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+    }
   }
 }
