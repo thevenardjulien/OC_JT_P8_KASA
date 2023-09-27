@@ -14,3 +14,22 @@
     text-transform: uppercase;
   }
 }
+
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-wrapper {
+    gap: 55px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .link-wrapper {
+    gap: 10px;
+  }
+}

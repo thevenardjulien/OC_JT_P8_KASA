@@ -10,7 +10,7 @@ const Collapse = ({ title, txt }) => {
   }
   return (
     <div className="collapse-container">
-      <div className="collapse">
+      <div className="collapse" onClick={handleClick}>
         <h2 className="collapse__title">{title}</h2>
         <i
           className={
@@ -18,7 +18,6 @@ const Collapse = ({ title, txt }) => {
               ? "collapse__chevron collapse__chevron--active fa-solid fa-chevron-up"
               : "collapse__chevron fa-solid fa-chevron-up"
           }
-          onClick={handleClick}
         ></i>
       </div>
       {display && (

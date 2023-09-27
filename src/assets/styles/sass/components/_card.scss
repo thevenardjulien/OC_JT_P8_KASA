@@ -11,11 +11,11 @@
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      /* Couleur transparente en haut */ rgba(0, 0, 0, 0.5) 80%
-        /* Couleur semi-transparente qui s'assombrit à 70% vers le bas */
+      rgba(0, 0, 0, 0.5) 80%
     );
     opacity: 0.5;
     pointer-events: none;
+    border-radius: 15px;
   }
   &__img {
     object-fit: cover;
@@ -31,5 +31,15 @@
     font-size: 1.1rem;
     font-weight: 500;
     text-wrap: balance;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-container a {
+    width: 33%;
   }
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logements from "../assets/json/logements.json";
 
 const Card = () => {
-  const [numberOfCards, setNumberOfCards] = useState(5);
+  const [numberOfCards, setNumberOfCards] = useState(6);
 
   return logements.slice(0, numberOfCards).map((logement) => {
     let path = "/logement/" + logement.id;

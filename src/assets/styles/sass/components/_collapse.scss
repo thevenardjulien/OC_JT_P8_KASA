@@ -30,11 +30,4 @@
   padding-bottom: 0px;
   border-radius: 5px;
   color: $primary-color;
-  opacity: 0;
-  transform: translateY(-50px);
-  &--active {
-    transition: all 100ms;
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }

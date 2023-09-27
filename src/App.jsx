@@ -7,7 +7,9 @@ function App() {
   return (
     <div>
       <Banner src={BannerImg} text="Chez vous, partout et ailleurs" />
-      <Card />
+      <div className="card-container">
+        <Card />
+      </div>
     </div>
   );
 }
