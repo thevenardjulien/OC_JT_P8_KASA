@@ -26,6 +26,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .carousel {
+    height: 415px;
+    &__img {
+      height: 100%;
+    }
+  }
   .chevrons {
     font-size: 3rem;
   }
