@@ -1,6 +1,7 @@
 @use "../utils/index" as *;
 
 .carousel-info-container {
+  width: 100%;
   display: flex;
   gap: 15px;
   flex-direction: column;
@@ -26,6 +27,7 @@
 
 .tagsList {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   font-size: 0.7rem;
   &__tag {

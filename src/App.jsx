@@ -19,10 +19,10 @@ function App() {
       <Banner src={BannerImg} text="Chez vous, partout et ailleurs" />
       <div className="card-container">
         <Card add={add} />
+      </div>
+      <div>
         {cardCount < logements.length && (
-          <button className="voirPlus" onClick={handleClick}>
-            Afficher plus
-          </button>
+          <button onClick={handleClick}>Afficher plus</button>
         )}
       </div>
     </div>
