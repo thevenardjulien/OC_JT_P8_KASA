@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logements from "../assets/json/logements.json";
 
-const Card = () => {
+const Card = ({ add }) => {
   const [numberOfCards, setNumberOfCards] = useState(6);
 
-  return logements.slice(0, numberOfCards).map((logement) => {
+  return logements.slice(0, numberOfCards + add).map((logement) => {
     let path = "/logement/" + logement.id;
     return (
       <Link to={path} key={logement.id}>

@@ -47,6 +47,23 @@
   padding-bottom: 0px;
   border-radius: 5px;
   color: $primary-color;
+  display: grid;
+  &--active {
+    animation: collapseAnimation 80ms;
+  }
+}
+
+@keyframes collapseAnimation {
+  0% {
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @media screen and (min-width: 1024px) {

@@ -6,6 +6,10 @@
   margin: 20px;
 }
 
+.card-container a {
+  margin: 0 auto;
+}
+
 .card {
   position: relative;
   &::before {

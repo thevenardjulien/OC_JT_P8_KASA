@@ -139,6 +139,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+  margin: 20px 0;
+  background-color: #ff6060;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .container-p404 {
   padding: 50px;
   display: flex;
@@ -318,6 +331,10 @@ body {
   margin: 20px;
 }
 
+.card-container a {
+  margin: 0 auto;
+}
+
 .card {
   position: relative;
 }
@@ -412,8 +429,24 @@ body {
   padding-bottom: 0px;
   border-radius: 5px;
   color: #ff6060;
+  display: grid;
+}
+.collapseContent--active {
+  animation: collapseAnimation 80ms;
 }
 
+@keyframes collapseAnimation {
+  0% {
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @media screen and (min-width: 1024px) {
   .logement-collapse {
     margin: 20px 0 50px 0;
