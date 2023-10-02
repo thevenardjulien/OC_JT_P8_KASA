@@ -20,7 +20,7 @@ function App() {
       <div className="card-container">
         <Card add={add} />
       </div>
-      <div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         {cardCount < logements.length && (
           <button onClick={handleClick}>Afficher plus</button>
         )}

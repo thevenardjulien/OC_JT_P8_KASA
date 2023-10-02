@@ -3,8 +3,8 @@
 .carousel-info-container {
   width: 100%;
   display: flex;
-  gap: 15px;
   flex-direction: column;
+  gap: 15px;
   color: $primary-color;
   &__title {
     font-size: 1.125rem;
@@ -12,12 +12,13 @@
   }
   &__location {
     font-size: 0.9rem;
+    margin: 15px 0;
   }
 }
 
-.star {
-  height: 13px;
-  width: 13px;
+.star,
+.greystar {
+  font-size: 1rem;
   margin-right: 8px;
 }
 
@@ -30,11 +31,12 @@
   flex-wrap: wrap;
   gap: 10px;
   font-size: 0.7rem;
+  margin: 20px 0;
   &__tag {
     background-color: $primary-color;
     color: #fff;
     padding: 5px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
@@ -44,4 +46,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-info-container {
+    &__title {
+      font-size: 2.25rem;
+      font-weight: 500;
+    }
+    &__location {
+      font-size: 1.125rem;
+      margin: 15px 0;
+    }
+    .tagsList {
+      &__tag {
+        padding: 8px 30px;
+      }
+    }
+  }
+  .star,
+  .greystar {
+    font-size: 1.4rem;
+  }
+  .info-rating-host {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .rating-host {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .tagsList {
+    &__tag {
+      border-radius: 10px;
+    }
+  }
 }

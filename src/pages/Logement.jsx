@@ -37,12 +37,16 @@ const Logement = () => {
         {logementActif !== null ? (
           <div className="carousel-info-container">
             <Carousel currentLogement={logementActif} />
-            <h2 className="carousel-info-container__title">{title}</h2>
-            <p className="carousel-info-container__location">{location}</p>
-            <ul className="tagsList">{tagsList}</ul>
-            <div className="rating-host">
-              <Rate rating={rating} />
-              <Host host={host} />
+            <div className="info-rating-host">
+              <div>
+                <h2 className="carousel-info-container__title">{title}</h2>
+                <p className="carousel-info-container__location">{location}</p>
+                <ul className="tagsList">{tagsList}</ul>
+              </div>
+              <div className="rating-host">
+                <Rate rating={rating} />
+                <Host host={host} />
+              </div>
             </div>
           </div>
         ) : null}

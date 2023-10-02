@@ -14,7 +14,7 @@ const Rate = ({ rating }) => {
     stars.push(<span key={i}>{emptyStar}</span>);
   }
 
-  return <div>{stars}</div>;
+  return <div className="stars">{stars}</div>;
 };
 
 export default Rate;

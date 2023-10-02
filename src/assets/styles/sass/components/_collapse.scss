@@ -50,7 +50,7 @@
   color: $primary-color;
   display: grid;
   &--active {
-    animation: collapseAnimation 500ms;
+    animation: collapseAnimation 400ms ease-out;
   }
 }
 
@@ -68,6 +68,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .collapse {
+    padding: 12px 20px;
+  }
   .logement-collapse {
     margin: 20px 0 50px 0;
     flex-direction: row;
@@ -76,5 +79,8 @@
   }
   .logement-collapse .collapse-container {
     width: 50%;
+  }
+  .stars {
+    padding-bottom: 20px;
   }
 }
