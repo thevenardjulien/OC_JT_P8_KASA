@@ -15,12 +15,14 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="main-container">
       <Banner src={BannerImg} text="Chez vous, partout et ailleurs" />
       <div className="card-container">
         <Card add={add} />
         {cardCount < logements.length && (
-          <button onClick={handleClick}>Afficher plus</button>
+          <button className="voirPlus" onClick={handleClick}>
+            Afficher plus
+          </button>
         )}
       </div>
     </div>

@@ -13,7 +13,7 @@ const aboutCollapses = AproposContent.map((content, index) => {
 
 const Apropos = () => {
   return (
-    <div>
+    <div className="main-container">
       <Banner src={BannerImg} />
       <div className="apropos-collapse">{aboutCollapses}</div>
     </div>

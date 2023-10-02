@@ -1,10 +1,10 @@
 @use "../utils/index" as *;
 
 .container-p404 {
-  padding: 50px;
+  padding-block: 50px;
   @include flex-center;
   flex-direction: column;
-  gap: 140px;
+  gap: 130px;
   color: $primary-color;
   &__title {
     font-size: 6rem;

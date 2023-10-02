@@ -24,7 +24,7 @@ const Collapse = ({ title, txt }) => {
         <div
           className={
             isActive
-              ? "collapseContent collapseContent--active"
+              ? "collapseContent collapseContent--active unCollapseContent"
               : "collapseContent"
           }
         >

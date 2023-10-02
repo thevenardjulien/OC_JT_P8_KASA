@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const P404 = () => {
   return (
-    <div className="container-p404">
+    <div className="container-p404 main-container">
       <h1 className="container-p404__title">404</h1>
       <p className="container-p404__text">
         Oups! La page que vous demandez n'existe pas.

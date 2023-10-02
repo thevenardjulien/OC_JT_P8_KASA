@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  margin: 20px;
+  margin-bottom: 20px;
   &__img {
     object-fit: cover;
     height: 110px;
@@ -22,7 +22,6 @@
 
 @media screen and (min-width: 1024px) {
   .banner {
-    margin: 50px 100px;
     &__img {
       height: 220px;
     }

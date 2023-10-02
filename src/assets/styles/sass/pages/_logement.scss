@@ -1,16 +1,27 @@
 @use "../utils/index" as *;
 
-.carousel-container {
+.carousel-info-container {
   display: flex;
   gap: 15px;
   flex-direction: column;
-  margin-inline: 20px;
   color: $primary-color;
   &__title {
-    margin-top: 15px;
     font-size: 1.125rem;
     font-weight: 500;
   }
+  &__location {
+    font-size: 0.9rem;
+  }
+}
+
+.star {
+  height: 13px;
+  width: 13px;
+  margin-right: 8px;
+}
+
+.greystar {
+  color: #e3e3e3;
 }
 
 .tagsList {
@@ -31,13 +42,4 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media screen and (min-width: 1024px) {
-  .logement-container {
-    margin: 20px 100px;
-  }
-  .carousel-container {
-    margin: 0;
-  }
 }

@@ -2,8 +2,8 @@ import { useState } from "react";
 
 const Rate = ({ rating }) => {
   const [rate, setRate] = useState(rating);
-  const star = <i className="fa-solid fa-star"></i>;
-  const emptyStar = <i className="fa-regular fa-star"></i>;
+  const star = <i className="fa-solid fa-star star"></i>;
+  const emptyStar = <i className="fa-solid fa-star greystar"></i>;
   const stars = [];
 
   for (let i = 0; i < rate; i++) {

@@ -19,7 +19,7 @@
   &__chevron {
     color: white;
     font-size: 1.2rem;
-    transition: transform 100ms ease-out;
+    transition: transform 500ms ease-out;
     &--active {
       transform: rotate(-180deg);
     }
@@ -27,7 +27,7 @@
 }
 
 .logement-collapse {
-  margin: 20px;
+  margin-block: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -37,7 +37,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-inline: 20px;
   margin-bottom: 20px;
 }
 
@@ -49,7 +48,7 @@
   color: $primary-color;
   display: grid;
   &--active {
-    animation: collapseAnimation 80ms;
+    animation: collapseAnimation 500ms;
   }
 }
 
@@ -75,9 +74,5 @@
   }
   .logement-collapse .collapse-container {
     width: 50%;
-  }
-  .apropos-collapse {
-    margin-inline: 100px;
-    margin-bottom: 50px;
   }
 }

@@ -4,12 +4,19 @@
 @use "./layout/index" as *;
 @use "./components/index" as *;
 
-@media screen and (min-width: 1024px) {
-  .global-container {
-    padding: 50px 100px;
-  }
+html,
+body {
+  height: 100%;
 }
 
-.main {
-  padding: 20px;
+.main-container {
+  margin: 0 20px;
+  max-width: 1440px;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    margin: 50px auto;
+    min-height: clamp(60vh, 500px, 80vh);
+  }
 }
