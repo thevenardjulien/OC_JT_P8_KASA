@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router";
 import { useEffect } from "react";
-import logements from "../assets/json/logements.json";
+import { logements } from "./utils/fetchs";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
