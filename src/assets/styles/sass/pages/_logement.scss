@@ -75,9 +75,11 @@
   }
   .rating-host {
     flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 3rem;
   }
   .tagsList {
+    font-size: 0.8rem;
     &__tag {
       border-radius: 10px;
     }

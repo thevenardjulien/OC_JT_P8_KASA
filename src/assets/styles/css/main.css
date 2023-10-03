@@ -256,7 +256,11 @@ button {
   }
   .rating-host {
     flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+  .tagsList {
+    font-size: 0.8rem;
   }
   .tagsList__tag {
     border-radius: 10px;
@@ -505,9 +509,6 @@ button {
   .logement-collapse .collapse-container {
     width: 50%;
   }
-  .stars {
-    padding-bottom: 20px;
-  }
 }
 .carousel {
   position: relative;
@@ -567,6 +568,10 @@ button {
 @media screen and (min-width: 1024px) {
   .host {
     margin-block: 0;
+  }
+  .host__img {
+    height: 4rem;
+    width: 4rem;
   }
 }
 .main-container {

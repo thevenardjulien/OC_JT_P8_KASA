@@ -18,5 +18,9 @@
 @media screen and (min-width: 1024px) {
   .host {
     margin-block: 0;
+    &__img {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 }
