@@ -43,14 +43,13 @@
 }
 
 .collapseContent {
-  margin: 0px 20px 0px 20px;
   padding: 15px;
-  padding-bottom: 0px;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   color: $primary-color;
   display: grid;
+  max-width: 100%;
   &--active {
-    animation: collapseAnimation 400ms ease-out;
+    animation: collapseAnimation 400ms ease-out forwards;
   }
 }
 
@@ -58,12 +57,13 @@
   0% {
     grid-template-rows: 0fr;
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-10px);
   }
   100% {
     grid-template-rows: 1fr;
     opacity: 1;
     transform: translateY(0px);
+    background-color: #f6f6f6;
   }
 }
 

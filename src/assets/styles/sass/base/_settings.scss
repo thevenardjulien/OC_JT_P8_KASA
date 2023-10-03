@@ -103,6 +103,7 @@ section {
 body {
   line-height: 1;
   font-weight: 500;
+  font-size: 1rem;
 }
 ol,
 ul,
@@ -126,4 +127,10 @@ table {
 }
 a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.1rem;
+  }
 }

@@ -3,7 +3,7 @@ import Banner from "./components/Banner";
 import BannerImg from "./assets/img/banner.png";
 import Card from "./components/Card";
 import { useState } from "react";
-import logements from "./assets/json/logements.json";
+import { logements } from "./utils/fetchs";
 
 function App() {
   const [add, setAdd] = useState(0);

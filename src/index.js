@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   <div>
-    <BrowserRouter>
+    <BrowserRouter basename="/OC_JT_P8_KASA">
       <Header />
       <Routes>
         <Route path="/" element={<App />} />

@@ -8,6 +8,14 @@
     object-fit: cover;
     border-radius: 15px;
   }
+  &__current {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 2px 0px rgba($color: #000000, $alpha: 0.25);
+  }
 }
 
 .chevrons {

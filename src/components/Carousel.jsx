@@ -27,6 +27,9 @@ const Carousel = ({ currentLogement }) => {
         src={currentPicture}
         alt={currentLogement.title}
       />
+      <p className="carousel__current">
+        {current + 1}/{pictures.length}
+      </p>
       <i
         onClick={handleLeftClick}
         className="chevrons chevrons__left fa-solid fa-chevron-left"
