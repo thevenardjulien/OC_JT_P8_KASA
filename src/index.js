@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   <div>
-    <HashRouter>
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
@@ -21,7 +21,7 @@ root.render(
         <Route path="*" element={<P404 />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   </div>
   /* </React.StrictMode> */
 );
