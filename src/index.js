@@ -10,8 +10,7 @@ import Logement from "./pages/Logement";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
-  <div>
+  <React.StrictMode>
     <BrowserRouter basename="/OC_JT_P8_KASA">
       <Header />
       <Routes>
@@ -22,6 +21,5 @@ root.render(
       </Routes>
       <Footer />
     </BrowserRouter>
-  </div>
-  /* </React.StrictMode> */
+  </React.StrictMode>
 );

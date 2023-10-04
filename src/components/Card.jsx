@@ -6,16 +6,13 @@ const Card = ({ add }) => {
   const [numberOfCards, setNumberOfCards] = useState(6);
 
   return logements.slice(0, numberOfCards + add).map((logement) => {
-    let path = "/logement/" + logement.id;
+    const { id, cover, title } = logement;
+    let path = "/logement/" + id;
     return (
-      <Link to={path} key={logement.id}>
+      <Link to={path} key={id}>
         <div className="card">
-          <img
-            className="card__img"
-            src={logement.cover}
-            alt={logement.title}
-          />
-          <h2 className="card__title">{logement.title}</h2>
+          <img className="card__img" src={cover} alt={title} />
+          <h2 className="card__title">{title}</h2>
         </div>
       </Link>
     );

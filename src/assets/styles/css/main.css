@@ -207,6 +207,11 @@ button {
   margin: 15px 0;
 }
 
+.stars {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .star,
 .greystar {
   font-size: 1rem;

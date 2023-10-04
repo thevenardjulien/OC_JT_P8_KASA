@@ -16,6 +16,11 @@
   }
 }
 
+.stars {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .star,
 .greystar {
   font-size: 1rem;
