@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logements from "../assets/json/logements.json";
 
-const Card = ({ add }) => {
+const Card = ({ add, logements }) => {
   const [numberOfCards, setNumberOfCards] = useState(6);
 
   return logements.slice(0, numberOfCards + add).map((logement) => {

@@ -1,16 +1,36 @@
 import { useNavigate, useParams } from "react-router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
 import Host from "../components/Host";
-import logements from "../assets/json/logements.json";
 
 const Logement = () => {
   const params = useParams();
-  const id = params.title;
   const navigate = useNavigate();
-  const logementActif = logements.find((logement) => logement.id === id);
+  const id = params.title;
+  const [logements, setLogements] = useState([]);
+  const [logementActif, setLogementActif] = useState(undefined);
+
+  useEffect(() => {
+    try {
+      fetch("/json/logements.json", {
+        headers: {
+          "Content-type": "Application/json",
+          Accept: "Application/json",
+        },
+      })
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          setLogements(data);
+        });
+      setLogementActif(logements.find((logement) => logement.id === id));
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
 
   useEffect(() => {
     if (!logementActif) {
