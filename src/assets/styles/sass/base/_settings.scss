@@ -129,8 +129,17 @@ a {
   text-decoration: none;
 }
 
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.1rem;
+  }
+  .main-container {
+    min-height: clamp(60vh, 500px, 80vh);
   }
 }

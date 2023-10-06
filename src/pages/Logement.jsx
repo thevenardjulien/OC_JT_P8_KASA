@@ -9,7 +9,6 @@ const Logement = () => {
   const params = useParams();
   const navigate = useNavigate();
   const id = params.title;
-  const [logements, setLogements] = useState([]);
   const [logementActif, setLogementActif] = useState(undefined);
 
   useEffect(() => {
@@ -24,19 +23,17 @@ const Logement = () => {
           return response.json();
         })
         .then((data) => {
-          setLogements(data);
+          const dataLogement = data.find((logement) => logement.id === id);
+          if (dataLogement === undefined) {
+            navigate("*");
+          } else {
+            setLogementActif(dataLogement);
+          }
         });
-      setLogementActif(logements.find((logement) => logement.id === id));
     } catch (error) {
       console.error(error);
     }
   }, []);
-
-  useEffect(() => {
-    if (!logementActif) {
-      navigate("*");
-    }
-  }, [logementActif, navigate]);
 
   if (logementActif) {
     const { tags, equipments, title, location, rating, host, description } =

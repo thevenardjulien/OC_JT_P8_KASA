@@ -3,15 +3,3 @@
 @use "./pages/index" as *;
 @use "./layout/index" as *;
 @use "./components/index" as *;
-
-.main-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media screen and (min-width: 1024px) {
-  .main-container {
-    min-height: clamp(60vh, 500px, 80vh);
-  }
-}
