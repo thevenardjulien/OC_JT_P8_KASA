@@ -20,17 +20,15 @@ const Collapse = ({ title, txt }) => {
           }
         ></i>
       </div>
-      {display && (
-        <div
-          className={
-            isActive
-              ? "collapseContent collapseContent--active unCollapseContent"
-              : "collapseContent"
-          }
-        >
-          {txt}
-        </div>
-      )}
+      <div
+        className={
+          isActive
+            ? "collapseContent collapseContent--active unCollapseContent"
+            : "collapseContent"
+        }
+      >
+        {txt}
+      </div>
     </div>
   );
 };

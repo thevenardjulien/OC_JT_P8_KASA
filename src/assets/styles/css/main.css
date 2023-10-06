@@ -137,9 +137,18 @@ a {
   text-decoration: none;
 }
 
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.1rem;
+  }
+  .main-container {
+    min-height: clamp(60vh, 500px, 80vh);
   }
 }
 body {
@@ -461,7 +470,7 @@ button {
 .collapse__chevron {
   color: white;
   font-size: 1.2rem;
-  transition: transform 500ms ease-out;
+  transition: transform 300ms ease-out;
 }
 .collapse__chevron--active {
   transform: rotate(-180deg);
@@ -484,29 +493,24 @@ button {
 }
 
 .collapseContent {
-  padding: 15px;
   border-radius: 0 0 5px 5px;
   color: #ff6060;
   display: grid;
   max-width: 100%;
+  opacity: 0;
+  height: 0px;
+  transition: all 300ms;
+  transform: scaleY(0.7);
+  transform-origin: top;
+  padding-left: 15px;
 }
 .collapseContent--active {
-  animation: collapseAnimation 400ms ease-out forwards;
+  padding: 15px 15px 0 15px;
+  height: 100%;
+  opacity: 1;
+  transform: scaleY(1);
 }
 
-@keyframes collapseAnimation {
-  0% {
-    grid-template-rows: 0fr;
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    grid-template-rows: 1fr;
-    opacity: 1;
-    transform: translateY(0px);
-    background-color: #f6f6f6;
-  }
-}
 @media screen and (min-width: 1024px) {
   .collapse {
     padding: 12px 20px;
@@ -591,17 +595,6 @@ button {
   .host__img {
     height: 4rem;
     width: 4rem;
-  }
-}
-.main-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media screen and (min-width: 1024px) {
-  .main-container {
-    min-height: clamp(60vh, 500px, 80vh);
   }
 }
 
