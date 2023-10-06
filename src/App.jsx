@@ -9,15 +9,12 @@ function App() {
 
   useEffect(() => {
     try {
-      fetch(
-        "https://thevenardjulien.github.io/OC_JT_P8_KASA/json/logements.json",
-        {
-          headers: {
-            "Content-type": "Application/json",
-            Accept: "Application/json",
-          },
-        }
-      )
+      fetch("/json/logements.json", {
+        headers: {
+          "Content-type": "Application/json",
+          Accept: "Application/json",
+        },
+      })
         .then((response) => {
           return response.json();
         })
