@@ -45,19 +45,18 @@
 .collapseContent {
   border-radius: 0 0 5px 5px;
   color: $primary-color;
-  display: grid;
   max-width: 100%;
   opacity: 0;
-  height: 0px;
   transition: all 300ms;
-  transform: scaleY(0.7);
+  transform: translateY(-10px);
   transform-origin: top;
   padding-left: 15px;
+  height: 0px;
   &--active {
-    padding: 15px 15px 0 15px;
+    padding-top: 15px;
     height: 100%;
     opacity: 1;
-    transform: scaleY(1);
+    transform: translateY(0);
   }
 }
 
