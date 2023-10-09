@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
 import Host from "../components/Host";
+import { host } from "../config";
 
 const Logement = () => {
   const params = useParams();
@@ -13,7 +14,7 @@ const Logement = () => {
 
   useEffect(() => {
     try {
-      fetch("/json/logements.json", {
+      fetch(`${host}/json/logements.json`, {
         headers: {
           "Content-type": "Application/json",
           Accept: "Application/json",

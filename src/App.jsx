@@ -3,13 +3,14 @@ import Banner from "./components/Banner";
 import BannerImg from "./assets/img/banner.png";
 import Card from "./components/Card";
 import { useEffect, useState } from "react";
+import { host } from "./config";
 
 function App() {
   const [logements, setLogements] = useState(undefined);
 
   useEffect(() => {
     try {
-      fetch("/json/logements.json", {
+      fetch(`${host}/json/logements.json`, {
         headers: {
           "Content-type": "Application/json",
           Accept: "Application/json",
