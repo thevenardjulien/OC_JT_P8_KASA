@@ -56,7 +56,7 @@ const Logement = () => {
           <div className="carousel-info-container">
             <Carousel currentLogement={logementActif} />
             <div className="info-rating-host">
-              <div>
+              <div className="rating-info">
                 <h2 className="carousel-info-container__title">{title}</h2>
                 <p className="carousel-info-container__location">{location}</p>
                 <ul className="tagsList">{tagsList}</ul>

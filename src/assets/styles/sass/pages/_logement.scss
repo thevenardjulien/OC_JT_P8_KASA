@@ -72,6 +72,12 @@
   .star,
   .greystar {
     font-size: 1.4rem;
+    transform: translateY(-14.5px);
+  }
+  .rating-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .info-rating-host {
     display: flex;
@@ -85,6 +91,7 @@
   }
   .tagsList {
     font-size: 0.8rem;
+    margin-bottom: 0;
     &__tag {
       border-radius: 10px;
     }
